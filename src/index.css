@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #F5EDD6;
+    color: #1A1208;
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .btn-dark {
+    @apply bg-espresso text-creme font-body font-bold px-7 py-3
+           text-sm tracking-widest uppercase transition-all duration-200
+           hover:bg-mogno active:scale-95;
+  }
+  .btn-outline-dark {
+    @apply border border-espresso text-espresso font-body font-bold px-7 py-3
+           text-sm tracking-widest uppercase transition-all duration-200
+           hover:bg-espresso hover:text-creme active:scale-95;
+  }
+  .eyebrow {
+    @apply font-body text-caramel text-xs uppercase tracking-[0.3em] font-bold;
+  }
+  .hairline {
+    @apply border-t border-espresso/15;
+  }
+}
