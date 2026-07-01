@@ -1,8 +1,10 @@
 {
   "name": "bistro-torres",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "private": true,
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
